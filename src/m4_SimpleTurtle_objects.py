@@ -157,7 +157,6 @@ natasha.forward(50)
 ###############################################################################
 bruce=rg.SimpleTurtle('turtle')
 bruce.pen = rg.Pen('blue', 30)
-boris.forward(100)
 bruce.forward(100)
 bruce.left(90)
 bruce.forward(100)
