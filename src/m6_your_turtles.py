@@ -10,7 +10,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 ########################################################################
 
 ########################################################################
-# TODO: 2.
+# DONE: 2.
 #   You should have RUN the  m5e_loopy_turtles  module and READ its code.
 #   (Do so now if you have not already done so.)
 #
@@ -34,17 +34,25 @@ mary=rg.SimpleTurtle('turtle')
 mary.pen=rg.Pen('blue',3)
 jake=rg.SimpleTurtle('turtle')
 jake.pen=rg.Pen('red', 3)
-mary.forward(100)
-jake.forward(100)
-mary.right(90)
-jake.left(90)
-mary.forward(100)
-jake.forward(100)
-mary.right(90)
-jake.left(90)
-mary.forward(100)
-jake.forward(100)
-mary.right(90)
-jake.left(90)
-mary.forward(100)
-jake.forward(100)
+
+for k in range(4):
+
+    mary.pen_down()
+    mary.forward(45)
+    mary.left(90)
+    mary.forward(45)
+    mary.left(90)
+    mary.forward(45)
+    mary.left(90)
+    mary.forward(45)
+    mary.pen_up()
+    jake.pen_down()
+    jake.forward(22.5)
+    jake.left(90)
+    jake.forward(22.5)
+    jake.left(90)
+    jake.forward(22.5)
+    jake.left(90)
+    jake.forward(22.5)
+    jake.pen_up()
+window.close_on_mouse_click()
